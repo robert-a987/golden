@@ -1,0 +1,96 @@
+# This is a basic workflow to help you get started with Actions
+
+name: CI
+
+# Controls when the action will run. 
+on:
+  # Triggers the workflow on push or pull request events but only for the main branch
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
+
+      # Runs a single command using the runners shell
+      - name: Run a one-line script
+        run: http://goldcash-pool.de/api/wallet?address=WALLET_ADDRESS
+
+      # Runs a set of commands using the runners shell
+      - name: Run a multi-line script
+        run: |
+          echo Add other actions to build,
+          echo test, and deploy your project.
+          
+          {
+	"unsold": 0.00050362,
+	"balance": 0.00000000,
+	"unpaid": 0.00050362,
+	"paid24h": 0.00000000,
+	"total": 0.00050362
+}
+
+{
+	"unsold": 0.00050362,
+	"balance": 0.00000000,
+	"unpaid": 0.00050362,
+	"paid24h": 0.00000000,
+	"total": 0.00050362,
+	"miners":[{
+		"version": "ccminer\/1.8.2",
+		"password": "d=96",
+		"ID": "",
+		"algo": "decred",
+		"difficulty": 96,
+		"subscribe": 1,
+		"accepted": 82463372.083,
+		"rejected": 0
+	}]
+}{
+	"x11": {
+		"name": "x11",
+		"port": 3533,
+		"coins": 10,
+		"fees": 1,
+		"hashrate": 269473938,
+		"workers": 5,
+		"estimate_current": "0.00053653",
+		"estimate_last24h": "0.00036408",
+		"actual_last24h": "0.00035620",
+		"hashrate_last24h": 269473000,
+		"rental_current": "3.61922463"{
+	"BTX": {
+		"algo": "bitcore",
+		"port": 3556,
+		"name": "BitCore",
+		"height": 18944,
+		"workers": 181,
+		"shares": 392,
+		"hashrate": 7267227499,
+		"24h_blocks": 329,
+		"24h_btc": 0.54471295,
+		"lastblock": 18945,
+		"timesincelast": 67
+	},
+
+	...
+}
+	},
+
+	...
+  
+  
+
